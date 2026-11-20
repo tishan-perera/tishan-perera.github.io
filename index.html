@@ -2,197 +2,147 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Tishan Perera · AI &amp; automation engineer</title>
-<meta name="description" content="Tishan Perera: AI & automation engineer for finance and ops. A person approves anything that moves money.">
-<meta property="og:title" content="Tishan Perera · AI &amp; automation engineer">
-<meta property="og:description" content="I build AI automations for finance &amp; ops. A person approves anything that moves money. Open to remote U.S. or hybrid NYC / Denver roles.">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tishan Perera · AI Automation Engineer — Mock v2 Bento</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
-html{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}
-:root{
-  --bg:#F5F8F8; --surface:#FFFFFF; --fg:#13202A; --muted:#566673; --line:#DCE3E7;
-  --accent:#0F8A84; --accent-soft:#E1F3F1;
-  --display:"Sora","Inter",system-ui,sans-serif; --body:"Inter",system-ui,-apple-system,sans-serif; --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
-}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0A1116;--surface:#111B22;--fg:#E6EEF2;--muted:#98A8B4;--line:#21313C;--accent:#3CC2BA;--accent-soft:#0F2A29;color-scheme:dark}}
-*{box-sizing:border-box}
-body{background:var(--bg);color:var(--fg);font:16px/1.6 var(--body);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-.wrap{max-width:920px;margin:0 auto;padding-block:48px 64px;display:grid;gap:56px}
-h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.15}
-a{color:var(--accent);text-underline-offset:3px}
-a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
-.eyebrow{font:500 12px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
-.muted{color:var(--muted)}
-/* hero */
-.hero{display:grid;gap:18px}
-.hero h1{font-size:clamp(34px,6vw,54px);font-weight:700;letter-spacing:-.02em}
-.hero h1 span{color:var(--accent)}
-.hero p.lede{font-size:clamp(17px,2.2vw,20px);max-width:62ch;margin:0;color:var(--muted)}
-.facts{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 0;padding:0;list-style:none}
-.facts li{font:500 13px/1 var(--mono);padding:8px 10px;border:1px solid var(--line);border-radius:6px;background:var(--surface)}
-.facts li.hl{border-color:var(--accent);color:var(--accent)}
-.contact{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;font-size:15px}
-/* pipeline */
-.pipe{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:22px clamp(16px,3vw,28px);display:grid;gap:16px}
-.pipe p{margin:0;font-size:14px}
-.steps{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;list-style:none;margin:0;padding:0}
-.steps li{position:relative;padding-top:22px;font-size:14px;line-height:1.35;min-width:0}
-.steps li::before{content:"";position:absolute;top:5px;left:0;right:-8px;height:2px;background:var(--line)}
-.steps li:last-child::before{right:0}
-.steps li::after{content:"";position:absolute;top:0;left:0;width:12px;height:12px;border-radius:50%;background:var(--surface);border:2px solid var(--muted)}
-.steps li.gate::after{background:var(--accent);border-color:var(--accent)}
-.steps li b{display:block;font-family:var(--display);font-size:15px}
-.steps li.gate b{color:var(--accent)}
-@media (max-width:720px){.steps{grid-template-columns:1fr;gap:14px}.steps li{padding:0 0 0 24px}.steps li::before{top:14px;bottom:-14px;left:5px;right:auto;width:2px;height:auto}.steps li:last-child::before{display:none}.steps li::after{top:2px}}
-/* numbers */
-.nums{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden}
-@media (max-width:720px){.nums{grid-template-columns:repeat(2,1fr)}}@media (max-width:420px){.nums{grid-template-columns:1fr}}
-code{font-family:var(--mono);font-size:.92em;overflow-wrap:anywhere}
-.num{background:var(--surface);padding:20px;display:grid;gap:6px;align-content:start}
-.num .v{font:700 clamp(26px,4vw,34px)/1 var(--display);font-variant-numeric:tabular-nums}
-.num .v small{font-size:.55em;color:var(--muted);font-weight:600}
-.num .l{font-size:14px;color:var(--muted);line-height:1.4}
-/* sections */
-section{display:grid;gap:20px}
-section>header{display:grid;gap:8px}
-section>header h2{font-size:clamp(24px,3.4vw,30px)}
-.entries{display:grid;gap:14px}
-.entry{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:20px clamp(16px,3vw,24px);display:grid;gap:10px;min-width:0}
-.entry .top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 16px;align-items:baseline}
-.entry h3{font-size:19px}
-.meta{font:500 12px/1.4 var(--mono);color:var(--muted);letter-spacing:.02em}
-.entry p{margin:0;max-width:72ch}
-.entry ul.pts{margin:0;padding-left:18px;display:grid;gap:4px}
-.result{display:inline-flex;gap:8px;align-items:baseline;font-size:14px;padding:8px 12px;border-radius:6px;background:var(--accent-soft);width:fit-content;max-width:100%}
-.result b{font-family:var(--mono);color:var(--accent);font-weight:500;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
-.tags{display:flex;flex-wrap:wrap;gap:6px;list-style:none;margin:0;padding:0}
-.tags li{font:500 12px/1 var(--mono);color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:5px 7px}
-.links{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:14px}
-/* roles */
-.roles{list-style:none;margin:0;padding:0;display:grid}
-.roles li{display:grid;grid-template-columns:150px 1fr;gap:4px 20px;padding:16px 0;border-top:1px solid var(--line)}
-.roles li:last-child{border-bottom:1px solid var(--line)}
-.roles .when{font:500 13px var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
-.roles h3{font-size:17px}
-.roles p{margin:4px 0 0;font-size:15px;color:var(--muted)}
-@media (max-width:560px){.roles li{grid-template-columns:1fr}}
-.stack{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px 24px}
-.stack div{display:grid;gap:8px;align-content:start}
-.stack h3{font:600 13px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
-.cta{background:var(--surface);border:1px solid var(--accent);border-radius:10px;padding:26px clamp(16px,3vw,32px);display:grid;gap:12px}
-.cta h2{font-size:clamp(22px,3vw,28px)}
-.cta p{margin:0;max-width:65ch}
-footer{font-size:13px;color:var(--muted);display:grid;gap:6px}
-footer p{margin:0}
-@media (prefers-reduced-motion:no-preference){.entry{transition:border-color .15s}.entry:hover{border-color:var(--accent)}}
+:root{--bg:#E8EEF4;--card:#F8FAFC;--ink:#0C1A2B;--muted:#4D5D70;--line:#C9D4E0;--navy:#14344E;--gold:#8A6D1F;--ok:#1C6B4A}
+*{box-sizing:border-box}code{white-space:nowrap}html,body{margin:0}body{background:var(--bg);color:var(--ink);font:15px/1.5 "Plus Jakarta Sans",system-ui,sans-serif}
+a{color:#1A4E78}a:focus-visible{outline:2px solid var(--navy);outline-offset:2px}
+.shell{max-width:1200px;margin:0 auto;padding:20px 20px 64px}
+.bar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:10px 4px 16px}
+.bar strong{font-size:15px}.bar .job{font:500 12px/1 "IBM Plex Mono",monospace;color:var(--navy);letter-spacing:.04em}
+.bar nav{display:flex;gap:14px;font-size:13px;font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 18px 16px;min-width:0}
+.intro{grid-column:span 12}.skills{grid-column:span 12}.stat{grid-column:span 6}.proj{grid-column:span 4}.wide{grid-column:span 12}.half{grid-column:span 6}
+.k{font:500 11px/1 "IBM Plex Mono",monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--navy);margin:0 0 8px}
+h1{font-size:clamp(28px,3.6vw,40px);line-height:1.12;margin:0 0 10px;letter-spacing:-.03em;font-weight:800}
+.intro p{margin:0 0 10px;color:var(--muted);max-width:62ch}
+.rule{font-weight:600;color:var(--ink)!important}
+.flags{display:flex;flex-wrap:wrap;gap:6px;list-style:none;margin:12px 0 0;padding:0}
+.flags li{font:500 11px "IBM Plex Mono",monospace;border:1px solid var(--line);border-radius:6px;padding:5px 8px;background:#fff}
+.flags .open{background:#E6F3EC;border-color:var(--ok);color:var(--ok)}
+.sg{display:grid;grid-template-columns:repeat(2,1fr);gap:12px 16px}.domain{margin:12px 0 0;font-size:13px;color:var(--muted)}
+.sg h3{margin:0 0 8px;font:500 11px/1 "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:5px;list-style:none;margin:0;padding:0}
+.chips li{background:#fff;border:1px solid var(--line);border-radius:6px;padding:4px 8px;font-size:12px;font-weight:600}
+.stat .v{font:800 34px/1 "Plus Jakarta Sans",sans-serif;letter-spacing:-.03em}.stat .v small{font-size:.48em;color:var(--muted);font-weight:700}
+.stat p{margin:6px 0 0;font-size:12.5px;color:var(--muted);line-height:1.4}
+.proj h3,.wide h3{margin:0 0 4px;font-size:17px}
+.meta{font:500 11px "IBM Plex Mono",monospace;color:var(--muted);margin:0 0 8px}
+.proj p,.wide p{margin:0 0 8px;font-size:13.5px}
+.result{margin:0 0 8px;font-size:13px;padding:8px 10px;background:#F3EEDF;border-radius:8px}
+.result b{font:500 10px "IBM Plex Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin-right:6px}
+.steps{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;list-style:none;margin:0 0 8px;padding:0}
+.steps li{background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 10px 12px;font-size:12px;color:var(--muted)}
+.steps b{display:block;color:var(--ink);font-size:13px;margin-bottom:4px}
+.steps li.gate{border-color:var(--ok);background:#E6F3EC}.steps li.gate b{color:var(--ok)}
+.jobs{list-style:none;margin:0;padding:0}.jobs li{display:grid;grid-template-columns:130px 1fr;gap:12px;padding:12px 0;border-top:1px solid var(--line)}
+.when{font:500 11px "IBM Plex Mono",monospace;color:var(--muted)}.jobs h3{margin:0;font-size:15px}.jobs p{margin:4px 0 0;color:var(--muted);font-size:13.5px}
+.cta{grid-column:span 12;background:var(--navy);color:#F8FAFC;border:0}
+.cta h2{margin:0 0 8px;font-size:24px;color:#fff}.cta p{color:#D5DEE8;margin:0 0 8px}.cta a{color:#fff;font-weight:700}
+footer{grid-column:span 12;font-size:12px;color:var(--muted)}footer p{margin:0 0 6px}
+@media (max-width:1000px){.intro,.skills,.stat,.proj,.wide,.half,.cta,footer{grid-column:span 12}.sg,.steps{grid-template-columns:1fr 1fr}.stat{grid-column:span 6}}
+@media (max-width:640px){.sg,.steps,.stat{grid-template-columns:1fr}.jobs li{grid-template-columns:1fr}.shell{padding:12px 12px 48px}}
 </style>
 </head>
 <body>
-<div class="wrap">
-
-<header class="hero">
-  <div class="eyebrow">AI &amp; automation engineer · Finance &amp; ops</div>
-  <h1>Tishan Perera<br><span>I build AI automations for finance &amp; ops.</span> A person approves anything that moves money.</h1>
-  <p class="lede">More than three years as a Finance Analyst at Kane Kessler, P.C., a New York law firm, working in AP/AR, QuickBooks Online and ADP. Since October 2026 I've been an AI &amp; Automation Engineer at Slicing Water (Contract, Oct 2026–Present).</p>
-  <ul class="facts">
-    <li class="hl">Open to new roles</li>
-    <li>Remote U.S. first</li>
-    <li>Hybrid · NYC / Denver</li>
-    <li>U.S. permanent resident · no sponsorship needed</li>
-  </ul>
-  <div class="contact">
-    <a href="https://www.linkedin.com/in/tishan-perera/" target="_blank" rel="noopener">LinkedIn</a>
-    <a href="https://github.com/tishan-perera" target="_blank" rel="noopener">GitHub</a>
+<div class="shell">
+  <div class="bar">
+    <div><strong>Tishan Perera</strong> · <span class="job">AI AUTOMATION ENGINEER</span></div>
+    <nav>
+      <a href="https://www.linkedin.com/in/tishan-perera/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/tishan-perera" target="_blank" rel="noopener">GitHub</a>
+    </nav>
   </div>
-</header>
+  <div class="grid">
+    <section class="tile intro">
+      <p class="k">Direction</p>
+      <h1>I build AI automations: agents, workflows, and LLM tooling.</h1>
+      <p>Human-approved actions, with tests and guardrails. I'm an AI &amp; Automation Engineer at Slicing Water (Contract, Oct 2026–Present). I build agent workflows and automation pipelines, and I work with AI coding tools including Claude Code, Grok, and Cursor Agent. Before this I spent more than three years as a Finance Analyst at Kane Kessler, P.C., a New York law firm.</p>
+      <ul class="flags">
+        <li class="open">Open to new roles</li>
+        <li>Remote U.S. first</li>
+        <li>Hybrid · NYC / Denver</li>
+        <li>U.S. permanent resident · no sponsorship needed</li>
+      </ul>
+    </section>
+    <section class="tile skills" aria-labelledby="skills">
+      <p class="k" id="skills">Skills</p>
+      <div class="sg">
+        <div><h3>AI and automation</h3><ul class="chips"><li>Claude Code</li><li>Grok</li><li>Cursor Agent</li><li>Python</li><li>AI agents</li><li>unittest</li><li>GitHub</li><li>GitHub Actions</li><li>Approval gates</li></ul></div>
+        <div><h3>Data and BI</h3><ul class="chips"><li>Power BI</li><li>Excel</li><li>Power Query</li><li>SQL</li><li>Google Sheets</li><li>Google BigQuery</li><li>Tableau</li></ul></div>
+      </div>
+      <p class="domain">Domain background: QuickBooks Online, ADP and Microsoft 365, from finance operations roles.</p>
+    </section>
+    <div class="tile stat"><div class="v">33</div><p>unit tests on the Close &amp; Reconciliation Assistant, run in CI on every pull request and push to main</p></div>
+    <div class="tile stat"><div class="v">12<small>/12</small></div><p>test cases the Fairhaven FP&amp;A model reconciles to</p></div>
+    <div class="tile stat"><div class="v">0.00</div><p>unexplained difference on the synthetic sample month, with 19 items still waiting for a person</p></div>
+    <div class="tile stat"><div class="v">CI</div><p>secret scanning, lint and tests on every pull request in the personal multi-agent org; only I can merge to main</p></div>
 
-<section aria-labelledby="how">
-  <header><div class="eyebrow">How my reconciliation assistant works</div><h2 id="how">Every month-end run goes through the same six steps</h2></header>
-  <div class="pipe">
-    <ol class="steps">
-      <li><b>Load</b><span class="muted">Bank statement, cash ledger and vendor expenses. Rows not labelled SYNTHETIC are refused</span></li>
-      <li><b>Match</b><span class="muted">Exact bank-to-ledger pairs clear. Fuzzy and group matches stay suggestions</span></li>
-      <li><b>Tie out</b><span class="muted">The reconciliation bridge must tie out, or the run stops and writes nothing</span></li>
-      <li class="gate"><b>Person reviews</b><span class="muted">Anything uncertain goes to a review queue with a confidence and a reason</span></li>
-      <li><b>Approved, not posted</b><span class="muted">Approval records <code>approved_not_posted</code>. There is no posting step</span></li>
-      <li><b>Logged</b><span class="muted">Report, close checklist and audit log</span></li>
-    </ol>
-    <p class="muted">The model step is off by default and stays off until it has evals. An environment variable can't turn it on, and the command line refuses <code>--enable-llm</code>.</p>
-  </div>
-</section>
+    <section class="tile wide" aria-labelledby="how">
+      <p class="k">Close process</p>
+      <h3 id="how">Every month-end run goes through the same six steps</h3>
+      <ol class="steps">
+        <li><b>Load</b> Bank statement, cash ledger and vendor expenses. Rows not labelled SYNTHETIC are refused</li>
+        <li><b>Match</b> Exact bank-to-ledger pairs clear. Fuzzy and group matches stay suggestions</li>
+        <li><b>Tie out</b> The reconciliation bridge must tie out, or the run stops and writes nothing</li>
+        <li class="gate"><b>Person reviews</b> Anything uncertain goes to a review queue with a confidence and a reason</li>
+        <li><b>Approved, not posted</b> Approval records <code>approved_not_posted</code>. There is no posting step</li>
+        <li><b>Logged</b> Report, close checklist and audit log</li>
+      </ol>
+      <p style="margin:0;font-size:13px;color:var(--muted)">The model step is off by default and stays off until it has evals. An environment variable can't turn it on, and the command line refuses <code>--enable-llm</code>.</p>
+    </section>
 
-<section aria-labelledby="numbers">
-  <header><div class="eyebrow">Results</div><h2 id="numbers">The numbers</h2></header>
-  <div class="nums">
-    <div class="num"><div class="v">30%</div><div class="l">shorter AP/AR processing cycle times after re-engineering workflows in QuickBooks Online with validation checks (Kane Kessler)</div></div>
-    <div class="num"><div class="v">Weekly <small>from monthly</small></div><div class="l">executive financial reviews, after automating AR and AP KPI tracking in Excel (Kane Kessler)</div></div>
-    <div class="num"><div class="v">56</div><div class="l">attorney portfolios analysed for billing realization and AR/WIP trends (Kane Kessler)</div></div>
-    <div class="num"><div class="v">33</div><div class="l">unit tests on the Close &amp; Reconciliation Assistant, run in CI on every pull request and push to main</div></div>
-    <div class="num"><div class="v">0.00</div><div class="l">unexplained difference on the synthetic sample month, with 19 items still waiting for a person</div></div>
-    <div class="num"><div class="v">12<small>/12</small></div><div class="l">test cases the Fairhaven FP&amp;A model reconciles to</div></div>
-  </div>
-</section>
-
-<section aria-labelledby="work">
-  <header><div class="eyebrow">AI automation</div><h2 id="work">What I've built</h2></header>
-  <div class="entries">
-<article class="entry">
-      <div class="top"><h3>Close &amp; Reconciliation Assistant</h3><span class="meta">Personal project · Nov 2026 · director &amp; approver</span></div>
-      <p>A month-end cash reconciliation and expense-coding assistant that is not allowed to post anything. It is rule-based Python: a deterministic matcher, keyword rules for expense categories, a reconciliation bridge, a human review queue and an audit log. I built it with an AI coding agent and approved and merged what shipped. The data is synthetic; Sample Harbor LLC is fictional, and it has not been used on a real close.</p>
-      <div class="result"><b>Result</b> Sample month ties out to 0.00 unexplained difference, 0 journal entries posted, 19 review items left for a person</div>
-      <ul class="tags"><li>Python</li><li>unittest</li><li>GitHub Actions</li><li>Human-in-the-loop</li><li>Audit log</li></ul>
-      <div class="links"><a href="https://github.com/tishan-perera/grokbot/tree/main/projects/close-recon-assistant" target="_blank" rel="noopener">close-recon-assistant</a></div>
+    <article class="tile proj">
+      <p class="k">Project</p>
+      <h3>Close &amp; Reconciliation Assistant</h3>
+      <p class="meta">Personal project · Nov 2026 · director &amp; approver</p>
+      <p>A rule-based Python pipeline for a month-end cash reconciliation use case. It loads labelled inputs, runs a deterministic matcher, builds a reconciliation bridge that must tie out or the run stops, and writes a report, checklist and audit log. Uncertain items go to a human review queue; approval records <code>approved_not_posted</code>, and there is no posting step. The optional model step is off by default. I built it with an AI coding agent and approved and merged what shipped. The data is synthetic; Sample Harbor LLC is fictional, and it has not been used on a real close.</p>
+      <p class="result"><b>Result</b> Sample month ties out to 0.00 unexplained difference, 0 journal entries posted, 19 review items left for a person</p>
+      <ul class="chips"><li>Python</li><li>unittest</li><li>GitHub Actions</li><li>Human-in-the-loop</li><li>Audit log</li></ul>
+      <p><a href="https://github.com/tishan-perera/grokbot/tree/main/projects/close-recon-assistant" target="_blank" rel="noopener">close-recon-assistant</a></p>
     </article>
-    <article class="entry">
-      <div class="top"><h3>Fairhaven Metrics driver-based FP&amp;A model</h3><span class="meta">Personal project · Nov 2026 · synthetic company</span></div>
-      <p>A 12-month 2026 forecast, a 2025 budget-versus-actual comparison (annual and monthly) and a KPI summary for a fictional B2B SaaS company. Customer roll-forwards, headcount and cost-per-head drivers feed opex and KPIs. I wrote the forecast, budget-versus-actual and summary formulas in Google Sheets.</p>
-      <div class="result"><b>Result</b> Reconciles to 12 of 12 test cases</div>
-      <ul class="tags"><li>Google Sheets</li><li>Excel</li><li>Driver-based modeling</li><li>Budget vs actual</li></ul>
-      <div class="links"><a href="https://github.com/tishan-perera/grokbot/tree/main/projects/fpa-driver-model" target="_blank" rel="noopener">fpa-driver-model</a></div>
+    <article class="tile proj">
+      <p class="k">Project</p>
+      <h3>Fairhaven Metrics driver-based FP&amp;A model</h3>
+      <p class="meta">Personal project · Nov 2026 · synthetic company</p>
+      <p>A driver-based forecast workbook with automated checks. I wrote the 12-month 2026 forecast, a 2025 budget-versus-actual comparison (annual and monthly) and a KPI summary in Google Sheets, with customer roll-forwards and headcount drivers feeding opex and KPIs. The use case is a fictional B2B SaaS company, Fairhaven Metrics.</p>
+      <p class="result"><b>Result</b> Reconciles to 12 of 12 test cases</p>
+      <ul class="chips"><li>Google Sheets</li><li>Excel</li><li>Driver-based modeling</li><li>Budget vs actual</li></ul>
+      <p><a href="https://github.com/tishan-perera/grokbot/tree/main/projects/fpa-driver-model" target="_blank" rel="noopener">fpa-driver-model</a></p>
     </article>
-    <article class="entry">
-      <div class="top"><h3>Personal multi-agent AI organization</h3><span class="meta">Personal project · 2026 – present</span></div>
-      <p>A set of AI agents I run as departments, with a chief of staff routing work to department leads and specialists. The repository holds the org chart, role notes, operating rules and approval gates, and a shared task-queue schema with a validator and tests. Agents propose; I approve. Only I can merge to main.</p>
-      <div class="result"><b>Result</b> Every change goes through a pull request with secret scanning, lint and tests in CI</div>
-      <ul class="tags"><li>GitHub</li><li>GitHub Actions</li><li>JSON Schema</li><li>gitleaks</li><li>Approval gates</li></ul>
-      <div class="links"><a href="https://github.com/tishan-perera/grokbot" target="_blank" rel="noopener">grokbot</a></div>
+    <article class="tile proj">
+      <p class="k">Project</p>
+      <h3>Personal multi-agent AI organization</h3>
+      <p class="meta">Personal project · 2026 – present</p>
+      <p>A personal system of AI agents organized as departments, with a chief of staff routing work to leads and specialists. The repository holds the org chart, role notes, operating rules, approval gates, and a shared task-queue schema with a Python validator and tests. Agents propose; I approve. Only I can merge to main.</p>
+      <p class="result"><b>Result</b> Every change goes through a pull request with secret scanning, lint and tests in CI</p>
+      <ul class="chips"><li>GitHub</li><li>GitHub Actions</li><li>JSON Schema</li><li>gitleaks</li><li>Approval gates</li></ul>
+      <p><a href="https://github.com/tishan-perera/grokbot" target="_blank" rel="noopener">grokbot</a></p>
     </article>
+
+    <section class="tile wide" aria-labelledby="exp">
+      <p class="k" id="exp">Where I've worked</p>
+      <ul class="jobs">
+        <li><span class="when">Oct 2026 – now</span><div><h3>AI &amp; Automation Engineer · Slicing Water</h3><p>Contract, remote. Oct 2026–Present.</p></div></li>
+        <li><span class="when">May 2023 – Sep 2026</span><div><h3>Finance Analyst · Kane Kessler, P.C.</h3><p>New York, NY (hybrid). Excel KPI tracking that moved executive reviews from monthly to weekly; AP/AR workflows in QuickBooks Online with validation checks, cutting cycle times 30%; analysed billing realization and AR/WIP across 56 attorney portfolios; headcount and compensation scenario models across 73 employees. QuickBooks Online, ADP.</p></div></li>
+        <li><span class="when">Jan 2023 – Apr 2023</span><div><h3>Volunteer Tax Preparer · VITA program</h3><p>Staten Island, NY. Prepared federal and state income tax returns for individual clients and explained them in plain language.</p></div></li>
+        <li><span class="when">Apr 2021 – Dec 2022</span><div><h3>Junior Accounting Analyst · SMB Associates LLC</h3><p>Austin, TX (remote). Built Power BI dashboards for payroll and operating expense reporting. Benchmarked market compensation across 9+ functional roles.</p></div></li>
+        <li><span class="when">Jan 2018 – Apr 2021</span><div><h3>Inventory &amp; Operations Analyst · Oceanbreeze Pharmacy</h3><p>Staten Island, NY. Recurring inventory reconciliations and variance analyses to find the causes of shrinkage and billing discrepancies.</p></div></li>
+      </ul>
+    </section>
+    <aside class="tile cta">
+      <h2>Hiring an AI automation engineer?</h2>
+      <p>I'm looking for remote roles in the U.S., or hybrid roles in New York City or Denver. U.S. permanent resident, no sponsorship needed. Send me a message on LinkedIn.</p>
+      <p><a href="https://www.linkedin.com/in/tishan-perera/" target="_blank" rel="noopener">Message me on LinkedIn</a></p>
+    </aside>
+    <footer>
+      <p>Certifications: Google AI Professional Certificate, Google Career Certificates on Coursera · Introduction to Data Analytics on Google Cloud, Google Cloud Skills Boost (Nov 2024) · Financial Analyst, LinkedIn (Jul 2024) · Get Started Building with Power BI, Microsoft (Apr 2024).</p>
+      <p>Education: The City University of New York, College of Staten Island, B.S., Accounting &amp; Business Management. Dean's List (2018–19, 2019–20), National Society of Collegiate Scholars, Sigma Beta Delta.</p>
+    </footer>
   </div>
-</section>
-
-<section aria-labelledby="exp">
-  <header><div class="eyebrow">Experience</div><h2 id="exp">Where I've worked</h2></header>
-  <ul class="roles">
-    <li><span class="when">Oct 2026 – now</span><div><h3>AI &amp; Automation Engineer · Slicing Water</h3><p>Contract, remote. Oct 2026–Present.</p></div></li>
-    <li><span class="when">May 2023 – Sep 2026</span><div><h3>Finance Analyst · Kane Kessler, P.C.</h3><p>New York, NY (hybrid). Automated AR and AP KPI tracking in Excel, taking executive reviews from monthly to weekly. Re-engineered AP/AR workflows in QuickBooks Online with validation checks, cutting cycle times 30%. Built headcount and compensation scenario models across 73 employees. QuickBooks Online, ADP.</p></div></li>
-    <li><span class="when">Jan 2023 – Apr 2023</span><div><h3>Volunteer Tax Preparer · VITA program</h3><p>Staten Island, NY. Prepared federal and state income tax returns for individual clients and explained them in plain language.</p></div></li>
-    <li><span class="when">Apr 2021 – Dec 2022</span><div><h3>Junior Accounting Analyst · SMB Associates LLC</h3><p>Austin, TX (remote). Built Power BI dashboards for payroll and operating expense reporting. Benchmarked market compensation across 9+ functional roles.</p></div></li>
-    <li><span class="when">Jan 2018 – Apr 2021</span><div><h3>Inventory &amp; Operations Analyst · Oceanbreeze Pharmacy</h3><p>Staten Island, NY. Recurring inventory reconciliations and variance analyses to find the causes of shrinkage and billing discrepancies.</p></div></li>
-  </ul>
-</section>
-
-<section aria-labelledby="tools">
-  <header><div class="eyebrow">Tools</div><h2 id="tools">What I work with</h2></header>
-  <div class="stack">
-    <div><h3>AI and automation</h3><ul class="tags"><li>Claude Code</li><li>Grok</li><li>Cursor Agent</li><li>GitHub</li><li>GitHub Actions</li></ul></div>
-    <div><h3>BI and data</h3><ul class="tags"><li>Power BI</li><li>Excel</li><li>Power Query</li><li>SQL</li><li>Google Sheets</li><li>Google BigQuery</li><li>Tableau</li></ul></div>
-    <div><h3>Finance systems</h3><ul class="tags"><li>QuickBooks Online</li><li>ADP</li><li>Microsoft 365</li></ul></div>
-    <div><h3>Finance work</h3><ul class="tags"><li>Month-end close</li><li>Reconciliations</li><li>AP / AR</li><li>Budget vs actual</li><li>Driver-based FP&amp;A</li><li>Compensation modeling</li></ul></div>
-  </div>
-</section>
-
-<aside class="cta" aria-labelledby="hire">
-  <h2 id="hire">Hiring an AI automation engineer for finance or ops?</h2>
-  <p>I'm looking for remote roles in the U.S., or hybrid roles in New York City or Denver. U.S. permanent resident, no sponsorship needed. Send me a message on LinkedIn.</p>
-  <div class="contact"><a href="https://www.linkedin.com/in/tishan-perera/" target="_blank" rel="noopener">Message me on LinkedIn</a></div>
-</aside>
-
-<footer>
-  <p>Certifications: Google AI Professional Certificate, Google Career Certificates on Coursera · Introduction to Data Analytics on Google Cloud, Google Cloud Skills Boost (Nov 2024) · Financial Analyst, LinkedIn (Jul 2024) · Get Started Building with Power BI, Microsoft (Apr 2024).</p>
-  <p>Education: The City University of New York, College of Staten Island, B.S., Accounting &amp; Business Management. Dean's List (2018–19, 2019–20), National Society of Collegiate Scholars, Sigma Beta Delta.</p>
-</footer>
 </div>
-
 </body>
 </html>
