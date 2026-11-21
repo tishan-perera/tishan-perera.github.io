@@ -2,50 +2,20 @@ name: Decode v8 assets
 on:
   push:
     paths:
-      - "staging-assets/**"
       - ".github/workflows/decode-v8-assets.yml"
 permissions:
   contents: write
 jobs:
-  decode:
+  cleanup:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Decode fonts and hero image
-        run: |
-          set -euo pipefail
-          mkdir -p fonts assets
-          base64 -d staging-assets/Inter-Regular.woff.b64 > fonts/Inter-Regular.woff
-          base64 -d staging-assets/Inter-Medium.woff.b64 > fonts/Inter-Medium.woff
-          base64 -d staging-assets/Inter-SemiBold.woff.b64 > fonts/Inter-SemiBold.woff
-          base64 -d staging-assets/JetBrainsMono-Regular.woff.b64 > fonts/JetBrainsMono-Regular.woff
-          base64 -d staging-assets/JetBrainsMono-Medium.woff.b64 > fonts/JetBrainsMono-Medium.woff
-          base64 -d staging-assets/ap-repo-hero.png.b64 > assets/ap-repo-hero.png
-          python3 - << 'PY'
-          from pathlib import Path
-          expected = {
-            "fonts/Inter-Regular.woff": 27404,
-            "fonts/Inter-Medium.woff": 27728,
-            "fonts/Inter-SemiBold.woff": 27984,
-            "fonts/JetBrainsMono-Regular.woff": 35268,
-            "fonts/JetBrainsMono-Medium.woff": 36020,
-            "assets/ap-repo-hero.png": 102623,
-          }
-          for path, size in expected.items():
-              got = Path(path).stat().st_size
-              if got != size:
-                  raise SystemExit(f"{path} size {got} != {size}")
-          print("sizes ok")
-          PY
-      - name: Commit decoded files
+      - name: Remove staging and this workflow
         run: |
           set -euo pipefail
           git config user.name "Tishan Perera"
           git config user.email "tishanisuru@gmail.com"
-          git add fonts/Inter-Regular.woff fonts/Inter-Medium.woff fonts/Inter-SemiBold.woff fonts/JetBrainsMono-Regular.woff fonts/JetBrainsMono-Medium.woff assets/ap-repo-hero.png
-          if git diff --cached --quiet; then
-            echo "No decoded-file changes"
-            exit 0
-          fi
-          git commit -m "Add decoded v8 font and image assets"
+          git rm -r staging-assets
+          git rm .github/workflows/decode-v8-assets.yml
+          git commit -m "Remove v8 asset-decode staging and workflow"
           git push
